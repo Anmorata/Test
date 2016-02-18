@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.gmukhigulashvili.test.MainActivity"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+       />
+
+    <Button
+        android:id="@+id/login_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_google"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/login_google"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/fb"
+        android:text="Facebook"
+        android:textColor="@color/colorWhite"
+        />
+
+    <Button
+        android:id="@+id/login_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/login_facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/google"
+        android:text="Google"
+        android:textColor="@color/colorWhite"
+        />
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_google"
+        android:layout_alignStart="@+id/login_google"
+        android:layout_below="@+id/login_or"
+        android:background="@drawable/transparent"
+        android:text="Skip"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/login_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/login_facebook"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/login_facebook"
+        android:layout_marginTop="88dp"
+        android:text="Welcome"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/login_l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_signup"
+        android:layout_alignStart="@+id/login_signup"
+        android:layout_below="@+id/login_l1"
+        android:text="Find any Event with Us"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/login_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_facebook"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/login_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_google"
+        android:layout_centerHorizontal="true"
+        android:text="Or"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
