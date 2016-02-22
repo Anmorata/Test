@@ -1,6 +1,8 @@
 package com.example.gmukhigulashvili.test;
 
 import android.annotation.TargetApi;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -17,11 +19,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.gmukhigulashvili.test.Fragments.FragmentMain;
 import com.example.gmukhigulashvili.test.Fragments.FragmentMap;
 import com.example.gmukhigulashvili.test.Fragments.FragmentFB;
+import com.example.gmukhigulashvili.test.domain.MainFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,9 +43,9 @@ public class MainActivity extends AppCompatActivity
 
     };
 
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+
+
+
 
 
 
@@ -57,10 +61,8 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
 
@@ -193,6 +195,21 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    // CAR
+
+    public List<MainFragment> getSetCarList(int qtd){
+        String[] models = new String[]{"Gallardo", "Corvette", "BMW 720i", "Camaro"};
+        String[] brands = new String[]{"Lamborghini", "Chevrolet", "BMW", "Chevrolet"};
+        int[] photos = new int[]{R.drawable.gallardo, R.drawable.corvette, R.drawable.bmw_720,  R.drawable.camaro};
+
+        List<MainFragment> listAux = new ArrayList<>();
+
+        for(int i = 0; i < qtd; i++){
+            MainFragment c = new MainFragment( models[i % models.length], brands[ i % brands.length], photos[i % models.length] );
+            listAux.add(c);
+        }
+        return(listAux);
+    }
 
 }
 

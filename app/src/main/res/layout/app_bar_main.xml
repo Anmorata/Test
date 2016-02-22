@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorNavHeader"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
