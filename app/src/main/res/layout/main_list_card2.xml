@@ -1,11 +1,11 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:layout_marginBottom="10dp"
-    android:layout_marginLeft="4dp"
-    android:layout_marginRight="4dp"
-    android:layout_marginTop="0dp"
+    android:layout_height="190dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="14dp"
     app:cardBackgroundColor="#7C4DFF"
     app:cardCornerRadius="4dp"
     app:cardElevation="3dp"
@@ -14,57 +14,67 @@
     app:cardUseCompatPadding="false">
 
     <RelativeLayout
+        android:id="@+id/main_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="true"
-        >
+        android:clickable="true">
 
-        <com.example.gmukhigulashvili.test.extras.CircularImageView
+
+        <ImageView
             android:id="@+id/iv_car"
-            android:layout_width="120dp"
-            android:layout_height="195dp"
-            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/iv_car"
+            android:layout_alignEnd="@+id/iv_car"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_gravity="center"
-            android:scaleType="center"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/fb_back"/>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:layout_alignParentTop="true"
-            android:layout_margin="6dp"
-            android:layout_toEndOf="@+id/iv_car"
-            android:layout_toRightOf="@+id/iv_car"
-            android:background="@drawable/card_background"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tv_model"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:paddingLeft="8dp"
-                android:textColor="@color/colorPrimarytext"
-                android:textSize="24sp" />
+            android:layout_below="@+id/iv_car">
 
             <TextView
                 android:id="@+id/tv_brand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingBottom="18dp"
-                android:paddingLeft="8dp"
-                android:layout_marginBottom="10dp"
+                android:paddingLeft="1dp"
+
+                android:text="uinaue567567isdni"
                 android:textColor="@color/cardview_dark_background"
-                android:textSize="14sp" />
+                android:textSize="10sp"
+                android:layout_below="@+id/tv_model"
 
+                android:layout_alignStart="@+id/tv_model" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iausdbgiasubdg"
+                android:paddingLeft="1dp"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp" />
 
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_keyboard_arrow_right_24dp"
+                android:id="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>

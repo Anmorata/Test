@@ -198,9 +198,9 @@ public class MainActivity extends AppCompatActivity
     // CAR
 
     public List<MainFragment> getSetCarList(int qtd){
-        String[] models = new String[]{"Gallardo", "Corvette", "BMW 720i", "Camaro"};
-        String[] brands = new String[]{"Lamborghini", "Chevrolet", "BMW", "Chevrolet"};
-        int[] photos = new int[]{R.drawable.gallardo, R.drawable.corvette, R.drawable.bmw_720,  R.drawable.camaro};
+        String[] models = new String[]{"Onderkoffer | Gerald Le Funk | Art Inc " , "Corvette", "BMW 720i", "Camaro"};
+        String[] brands = new String[]{" Garden Hall, Agmashenebeli ave 73 ", "Chevrolet", "BMW", "Chevrolet"};
+        int[] photos = new int[]{R.drawable.mtkvarze1, R.drawable.mtkvarze2, R.drawable.mtkvarze3,  R.drawable.mtkvarze4};
 
         List<MainFragment> listAux = new ArrayList<>();
 
